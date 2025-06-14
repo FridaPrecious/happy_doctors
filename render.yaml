@@ -1,8 +1,11 @@
 services:
   - type: web
-    name: happy-doctors
-    plan: free  
-    dockerfilePath: Dockerfile  # Critical: Forces Docker build
+    name: happy_doctors
+    plan: free
+    region: oregon
+    dockerfilePath: Dockerfile  #  line for Docker
     envVars:
       - key: FLASK_ENV
         value: production
+    autoDeployTrigger: "off"
+version: "1"

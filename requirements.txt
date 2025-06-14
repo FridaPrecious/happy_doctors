@@ -1,8 +1,7 @@
-flask
-torch
-torchvision
-tensorflow
-keras
-pillow
-numpy
-
+flask==2.3.2
+torch==2.0.1  # Latest stable for Python 3.10
+torchvision==0.15.2
+tensorflow==2.10.1  # Last version supporting Python 3.10
+keras==2.10.0
+pillow==10.0.0
+numpy==1.23.5
