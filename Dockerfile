@@ -13,8 +13,7 @@ WORKDIR /app
 COPY . .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
+RUN pip install --upgrade pip && pip install -r requirements.txt
 # Run your app (adjust path if needed)
 CMD ["python", "pneumonia_backend/app.py"]
 
