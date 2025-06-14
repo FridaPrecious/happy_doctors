@@ -1,20 +1,12 @@
-# Use a specific working Python version
-FROM python:3.10-slim
+FROM python:3.10.13-slim  # Force Python 3.10.13
 
-# Install system libraries (needed by some packages like OpenCV or Torch)
+# Install system dependencies (required for torch/tensorflow)
 RUN apt-get update && apt-get install -y \
     libgl1 \
     && rm -rf /var/lib/apt/lists/*
 
-# Set working directory in the container
 WORKDIR /app
-
-# Copy all files from your project to the container
 COPY . .
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Run your app (adjust path if needed)
 CMD ["python", "pneumonia_backend/app.py"]
-

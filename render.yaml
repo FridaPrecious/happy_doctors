@@ -1,7 +1,8 @@
 services:
   - type: web
     name: happy-doctors
-    dockerfilePath: Dockerfile  # Render will now use the Dockerfile
+    plan: free  
+    dockerfilePath: Dockerfile  # Critical: Forces Docker build
     envVars:
       - key: FLASK_ENV
         value: production
