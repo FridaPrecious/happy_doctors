@@ -5,4 +5,3 @@ tensorflow
 keras
 pillow
 numpy
-python-3.10.13
