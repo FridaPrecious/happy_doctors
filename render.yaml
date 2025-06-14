@@ -3,10 +3,10 @@ services:
     name: happy_doctors
     plan: free
     region: oregon
-    runtime: docker  # Explicitly declare docker runtime
+    runtime: docker  # line to specify Docker
     dockerfilePath: Dockerfile
     envVars:
       - key: FLASK_ENV
         value: production
-    autoDeployTrigger: "off"
+    autoDeploy: false
 version: "1"
