@@ -1,7 +1,7 @@
 flask==2.3.2
-torch==2.0.1  # Latest stable for Python 3.10
-torchvision==0.15.2
-tensorflow==2.10.1  # Last version supporting Python 3.10
+torch==2.0.1+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+torchvision==0.15.2+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+tensorflow==2.10.1
 keras==2.10.0
 pillow==10.0.0
 numpy==1.23.5
