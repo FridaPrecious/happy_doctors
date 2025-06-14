@@ -1,12 +1,7 @@
 services:
   - type: web
     name: happy-doctors
-    runtime: python
-    python:
-      version: "3.10.13"  # Explicitly set Python version
-    buildCommand: pip install -r requirements.txt
-    startCommand: python pneumonia_backend/app.py
+    dockerfilePath: Dockerfile  # Render will now use the Dockerfile
     envVars:
       - key: FLASK_ENV
         value: production
-
