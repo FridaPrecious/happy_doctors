@@ -1,5 +1,5 @@
 # Use a specific working Python version
-FROM python:3.10-slim
+FROM python:3.9-slim
 
 # Install system libraries (needed by some packages like OpenCV or Torch)
 RUN apt-get update && apt-get install -y \
