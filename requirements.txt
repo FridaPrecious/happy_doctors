@@ -1,8 +1,9 @@
-flask==2.3.2
-torch==2.0.1 --extra-index-url https://download.pytorch.org/whl/cu118
-torchvision==0.15.2 --extra-index-url https://download.pytorch.org/whl/cu118
-tensorflow==2.6.0
-keras==2.6.0
-pillow==10.0.0
-numpy==1.23.5
-opencv-python-headless==4.7.0.72  # If using OpenCV
+flask
+torch --extra-index-url https://download.pytorch.org/whl/cu118
+torchvision --extra-index-url https://download.pytorch.org/whl/cu118
+tensorflow
+keras
+pillow
+numpy
+opencv-python-headless
+gdown
