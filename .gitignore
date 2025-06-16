@@ -16,7 +16,7 @@ env/
 *.pth
 *.h5
 
-# Render or secret files 
+# Render or secret files
 *.log
 *.sqlite3
 
